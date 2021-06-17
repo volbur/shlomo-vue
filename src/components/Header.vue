@@ -1,23 +1,30 @@
 <template>
   <header class="header">
-    <div class="header__profile-info">
-      <div class="profile-info__text"><span>ילארשי ל </span>ארשי ןכוסה םש</div>
-      <div class="profile-info__text"><span>למשח </span>תרבח ביטקלוק</div>
-      <div class="profile-info__text"><span>השמ םייח </span>,םולש</div>
+    <div class="header__wrapper">
+      <div class="header__profile-info">
+        <div class="profile-info__text">
+          <span>ילארשי ל </span>ארשי ןכוסה םש
+        </div>
+        <div class="profile-info__text"><span>למשח </span>תרבח ביטקלוק</div>
+        <div class="profile-info__text"><span>השמ םייח </span>,םולש</div>
+      </div>
+      <a href="#" class="header__avatar">
+        <img src="../assets/img/icons/icon-profile.svg" alt="avatar" />
+      </a>
     </div>
-    <a href="#" class="header__avatar">
-      <img src="../assets/img/icons/icon-profile.svg" alt="avatar" />
-    </a>
+    <slot></slot>
   </header>
 </template>
 
 <style lang="scss" scoped>
 .header {
-  padding: 0 11px;
-  min-height: 63px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  &__wrapper {
+    padding-right: 11px;
+    min-height: 63px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   &__avatar {
     margin-left: 11px;
     display: flex;
@@ -45,8 +52,10 @@
 
 @media (min-width: 1330px) {
   .header {
-    padding: 0 20px;
-    min-height: 106px;
+    &__wrapper {
+      padding-right: 20px;
+      min-height: 106px;
+    }
     &__avatar {
       margin-left: 19px;
       width: 38px;

@@ -1,9 +1,37 @@
-<Header></Header>
-  <section class="subheader">
-    <div class="subheader__title"><span>השמ םייח</span> ,םולש</div>
-  </section>
+<template>
+  <Header>
+    <section class="subheader">
+      <div class="subheader__title"><span>השמ םייח</span> ,םולש</div>
+    </section>
+  </Header>
+  <main class="main">
+    <section class="authorization">
+      <div class="authorization__wrapper-title">
+        <h1 class="authorization__title">ריחמה תעצהב היפצ - תכרעמל הסינכ</h1>
+        <IconAvatar />
+      </div>
+      <p class="authorization__text">
+        שדח דוק תחילש לע ץחל דוק תלביק אל םא ,הסינכה דוק תא ןזה
+      </p>
+      <FormAutorization />
+    </section>
+  </main>
+</template>
 
-  <style lang="scss">
+<script>
+import Header from "../components/Header.vue";
+import IconAvatar from "../components/UI/IconAvatar.vue";
+import FormAutorization from "../components/FormAutorization.vue";
+export default {
+  components: {
+    Header,
+    IconAvatar,
+    FormAutorization,
+  },
+};
+</script>
+
+<style lang="scss">
 .subheader {
   position: relative;
   display: none;
@@ -14,8 +42,70 @@
   background-color: #f5f5f5;
   box-shadow: inset 0 14px 16px -16px rgba(0, 0, 0, 0.4);
 }
+.main {
+  background: url("../assets/img/bg-build-mobile.jpg") center center/cover;
+}
+.authorization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px 63px;
+  width: 100%;
+  background-color: rgba(33, 50, 94, 0.8);
+  &__wrapper-title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 12px;
+    max-width: 330px;
+    border-bottom: 2px solid #fff;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    color: #fff;
+  }
+  &__text {
+    margin-top: 72px;
+    max-width: 330px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+  }
+}
+
+.icon-avatar {
+  margin-left: 30px;
+}
 
 @media (min-width: 1330px) {
+  .main {
+    background: url("../assets/img/bg-car-desctop.jpg") center center/cover;
+  }
+  .authorization {
+    padding: 30px 0 71px;
+    &__wrapper-title {
+      align-items: flex-end;
+      padding-bottom: 0;
+      max-width: 1076px;
+      border-bottom: 5px solid #fff;
+    }
+    &__title {
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 55px;
+    }
+
+    &__text {
+      width: unset;
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: 48px;
+    }
+  }
   .subheader {
     display: flex;
     &__title {

@@ -1,5 +1,5 @@
 <template>
-  <Authorization></Authorization>
+  <Authorization />
 </template>
 
 <script>
