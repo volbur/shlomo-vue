@@ -1,5 +1,15 @@
 <template>
-  <button class="btn" :class="[mode, { icon: icon }]" :type="type">
+  <button
+    class="btn"
+    :class="[
+      mode,
+      {
+        icon: icon,
+        medium: medium,
+      },
+    ]"
+    :type="type"
+  >
     <slot></slot>
   </button>
 </template>
@@ -19,9 +29,14 @@ export default {
       type: Boolean,
       required: false,
     },
+    medium: {
+      type: Boolean,
+      required: false,
+    },
   },
 };
 </script>
+
 
 <style lang="scss" scoped>
 .btn {
@@ -56,6 +71,19 @@ export default {
   background-color: #009c41;
 }
 
+.btn.medium {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  &::before {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 100%;
+    background: url("../../assets/img/icons/icon-plus.svg") center center/cover
+      no-repeat;
+  }
+}
+
 @media (min-width: 1330px) {
   .btn {
     width: 350px;
@@ -68,6 +96,20 @@ export default {
       left: 102px;
       width: 20px;
       height: 20px;
+    }
+  }
+  .btn.medium {
+    width: 284px;
+    height: 58px;
+    font-size: 24px;
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+      background: url("../../assets/img/icons/icon-triangle.svg") center
+        center/cover no-repeat;
     }
   }
 }

@@ -1,10 +1,7 @@
 <template>
   <div class="base-input__wrapper">
-    <button
-      :class="['base-input__btn', 'hidden', { show: icon }]"
-      type="button"
-    >
-      <img src="../../assets/img/icons/icon-cross.png" alt="icon-cross" />
+    <button :class="['base-input__btn', { show: icon }]" type="button">
+      <img :src="iconSrc" :alt="iconAlt" />
     </button>
     <input
       class="base-input"
@@ -15,9 +12,20 @@
     />
   </div>
 </template>
-
 <script>
 export default {
+  data() {
+    return {
+      iconSearch: {
+        src: require("../../assets/img/icons/icon-search.svg"),
+        alt: "icon search",
+      },
+      iconCross: {
+        src: require("../../assets/img/icons/icon-cross.png"),
+        alt: "icon cross",
+      },
+    };
+  },
   props: {
     id: {
       type: String,
@@ -35,11 +43,33 @@ export default {
       type: Boolean,
       required: false,
     },
+    iconName: {
+      type: String,
+      required: false,
+    },
+  },
+  computed: {
+    iconSrc() {
+      if (this.iconName === "search") {
+        return this.iconSearch.src;
+      } else if (this.iconName === "cross") {
+        return this.iconCross.src;
+      }
+      return null;
+    },
+    iconAlt() {
+      if (this.iconName === "search") {
+        return this.iconSearch.alt;
+      } else if (this.iconName === "cross") {
+        return this.iconCross.alt;
+      }
+      return null;
+    },
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .base-input {
   padding: 0 22px;
   width: 100%;
@@ -57,6 +87,7 @@ export default {
     position: relative;
   }
   &__btn {
+    display: none;
     position: absolute;
     top: 50%;
     left: 22px;
@@ -69,9 +100,6 @@ export default {
   }
 }
 
-.hidden {
-  display: none;
-}
 .show {
   display: inline-block;
 }

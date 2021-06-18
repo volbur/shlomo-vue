@@ -2,7 +2,12 @@
   <form class="authorization__form form">
     <div class="form__control">
       <label class="form__label" for="user-name">שמתשמ םש</label>
-      <BaseInput :icon="true" :name="'user-name'" :id="'user-name'" />
+      <BaseInput
+        :icon="true"
+        :icon-name="'cross'"
+        :name="'user-name'"
+        :id="'user-name'"
+      />
     </div>
     <div class="form__control">
       <label class="form__label" for="user-password">אמסיס</label>

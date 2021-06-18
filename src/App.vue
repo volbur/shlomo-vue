@@ -1,12 +1,12 @@
 <template>
-  <Authorization />
+  <Home />
 </template>
 
 <script>
-import Authorization from "./pages/Authorization.vue";
+import Home from "./pages/Home.vue";
 export default {
   components: {
-    Authorization,
+    Home,
   },
 };
 </script>
@@ -55,6 +55,18 @@ body {
   a {
     text-decoration: none;
     color: inherit;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    width: 374px;
+  }
+  @media (min-width: 1330px) {
+    .container {
+      width: 1076px;
+      padding: 0;
+    }
   }
 }
 </style>

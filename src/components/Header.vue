@@ -16,7 +16,7 @@
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   &__wrapper {
     padding-right: 11px;
