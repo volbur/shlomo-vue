@@ -57,7 +57,4 @@ export default {
     transform: translate(-50%, -50%);
   }
 }
-.primary {
-  background-color: #009c41;
-}
 </style>

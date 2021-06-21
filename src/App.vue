@@ -1,12 +1,12 @@
 <template>
-  <Home />
+  <router-view></router-view>
 </template>
 
 <script>
-import Home from "./pages/Home.vue";
+// import Authorization from "./pages/Authorization.vue";
 export default {
   components: {
-    Home,
+    // Authorization,
   },
 };
 </script>

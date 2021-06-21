@@ -1,6 +1,6 @@
 <template>
   <div class="table-offers">
-    <ul class="table-offers__heads container">
+    <ul class="table-offers__heads">
       <li class="offers-head">חוקלל חלשנ</li>
       <li class="offers-head">הסילופ ‘סמ</li>
       <li class="offers-head">חוטיבה תליחת</li>
@@ -36,9 +36,10 @@ export default {
 .table-offers {
   list-style: none;
   &__heads {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(9, 1fr);
-    margin-bottom: 35px;
+    margin: 0 auto 35px;
+    width: 1076px;
     list-style: none;
   }
 }
@@ -53,6 +54,13 @@ export default {
   margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1330px) {
+  .table-offers {
+    &__heads {
+      display: grid;
+    }
   }
 }
 </style>

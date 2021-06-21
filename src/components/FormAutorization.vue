@@ -1,5 +1,5 @@
 <template>
-  <form class="authorization__form form">
+  <form @submit.prevent="submitForm" class="authorization__form form">
     <div class="form__control">
       <label class="form__label" for="user-name">שמתשמ םש</label>
       <BaseInput
@@ -27,6 +27,11 @@ export default {
   components: {
     ButtonUI,
     BaseInput,
+  },
+  methods: {
+    submitForm() {
+      this.$router.push("/home");
+    },
   },
 };
 </script>

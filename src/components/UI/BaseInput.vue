@@ -1,6 +1,6 @@
 <template>
   <div class="base-input__wrapper">
-    <button :class="['base-input__btn', { show: icon }]" type="button">
+    <button class="base-input__btn" :class="className" type="button">
       <img :src="iconSrc" :alt="iconAlt" />
     </button>
     <input
@@ -64,6 +64,11 @@ export default {
         return this.iconCross.alt;
       }
       return null;
+    },
+    className() {
+      return {
+        show: this.icon,
+      };
     },
   },
 };
