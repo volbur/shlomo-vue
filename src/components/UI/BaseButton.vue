@@ -5,7 +5,7 @@
       mode,
       {
         icon: icon,
-        medium: medium,
+        round: round,
       },
     ]"
     :type="type"
@@ -29,7 +29,7 @@ export default {
       type: Boolean,
       required: false,
     },
-    medium: {
+    round: {
       type: Boolean,
       required: false,
     },
@@ -71,16 +71,35 @@ export default {
   background-color: #009c41;
 }
 
-.btn.medium {
+.btn.round {
   width: 40px;
   height: 40px;
   font-size: 0;
   &::before {
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 100%;
+    border-radius: 100%;
     background: url("../../assets/img/icons/icon-plus.svg") center center/cover
       no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: 280px;
+    height: 50px;
+    font-size: 22px;
+  }
+  .btn.icon {
+    &::before {
+      left: unset;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .btn.round {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -94,11 +113,9 @@ export default {
   .btn.icon {
     &::before {
       left: 102px;
-      width: 20px;
-      height: 20px;
     }
   }
-  .btn.medium {
+  .btn.round {
     width: 284px;
     height: 58px;
     font-size: 24px;

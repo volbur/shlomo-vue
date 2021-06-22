@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     submitForm() {
-      this.$router.push("/home");
+      this.$router.push("/admin");
     },
   },
 };
@@ -41,7 +41,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 57px;
   &__control {
     margin-top: 56px;
     width: 330px;
@@ -66,20 +65,35 @@ export default {
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 768px) {
   .form {
     &__control {
       width: 350px;
+      margin-top: 40px;
+      &_btns {
+        margin-top: 70px;
+        width: 600px;
+      }
+    }
+    &__label {
+      margin-bottom: 15px;
+      padding-right: 42px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: 1330px) {
+  .form {
+    &__control {
       &_btns {
         margin-top: 86px;
         width: 740px;
       }
     }
     &__label {
-      margin-bottom: 15px;
-      padding-right: 42px;
       font-size: 24px;
-      line-height: 28px;
     }
   }
 }

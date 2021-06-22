@@ -56,11 +56,20 @@ export default {
     margin-bottom: 0;
   }
 }
+@media (min-width: 768px) {
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: 1330px) {
   .table-offers {
     &__heads {
       display: grid;
     }
+  }
+  .card {
+    margin-bottom: 10px;
   }
 }
 </style>

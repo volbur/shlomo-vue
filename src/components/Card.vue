@@ -4,9 +4,9 @@
       <ul class="card__items">
         <li
           class="card__item card__item_1 card__item_svg"
-          :class="{ 'show-svg': card.isActive }"
+          :class="{ 'show-svg': card.isActive, 'show-text': !card.isActive }"
         >
-          <div class="card__item-head">(חוקלל החלשנ)</div>
+          <div class="card__item-head card__item-head_green">(חוקלל החלשנ)</div>
           <div class="svg-wrapper">
             <svg
               viewBox="0 0 24 20"
@@ -105,7 +105,7 @@ export default {
     &_svg {
       text-align: center;
       .card__item-head {
-        color: #009c41;
+        color: #797979;
       }
     }
     &-head {
@@ -212,14 +212,38 @@ export default {
     width: 95px;
   }
   .round-button {
-    width: 40px;
-    height: 40px;
     background-color: #009c41;
   }
 }
 
+.show-text .card__item-head {
+  color: #009c41;
+}
+
 .svg-wrapper {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .card {
+    &__items {
+      grid-row-gap: 22px;
+      padding: 30px 40px 40px;
+    }
+    &__item {
+      &-head {
+        font-size: 22px;
+      }
+      &-value {
+        font-size: 26px;
+      }
+    }
+    &__nav {
+      top: 15px;
+      left: 35px;
+      width: 110px;
+    }
+  }
 }
 
 @media (min-width: 1330px) {

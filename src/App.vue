@@ -3,12 +3,7 @@
 </template>
 
 <script>
-// import Authorization from "./pages/Authorization.vue";
-export default {
-  components: {
-    // Authorization,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss">
@@ -61,6 +56,12 @@ body {
     margin-right: auto;
     padding: 0 20px;
     width: 374px;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 600px;
+      padding: 0;
+    }
   }
   @media (min-width: 1330px) {
     .container {

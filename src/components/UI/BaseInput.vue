@@ -109,22 +109,32 @@ export default {
   display: inline-block;
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 768px) {
   .base-input {
     padding: 0 48px;
-    height: 58px;
-    font-size: 24px;
+    height: 50px;
+    font-size: 22px;
     line-height: 28px;
     &__btn {
       position: absolute;
       top: 50%;
       left: 22px;
-      width: 18px;
-      height: 18px;
+      width: 30px;
+      height: 30px;
       transform: translateY(-50%);
       border: none;
       background-color: transparent;
       cursor: pointer;
+    }
+  }
+}
+@media (min-width: 1330px) {
+  .base-input {
+    height: 58px;
+    font-size: 24px;
+    &__btn {
+      width: 18px;
+      height: 18px;
     }
   }
 }
