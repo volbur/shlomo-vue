@@ -59,8 +59,8 @@
         </li>
       </ul>
       <ul class="card__nav">
-        <RoundButton :is-letter="true" />
-        <RoundButton :is-pen="true" />
+        <RoundButton :is-icon-letter="true" />
+        <RoundButton :is-icon-pen="true" />
       </ul>
     </div>
   </li>
@@ -227,6 +227,13 @@ export default {
       top: 15px;
       left: 35px;
       width: 110px;
+    }
+    &__item {
+      &_9 {
+        img {
+          height: 40px;
+        }
+      }
     }
   }
 }
