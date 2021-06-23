@@ -14,18 +14,20 @@
       <BaseInput :name="'user-password'" :id="'user-password'" />
     </div>
     <div class="form__control form__control_btns">
-      <ButtonUI :icon="true" :type="'button'" :mode="'grey'">הסינכ</ButtonUI>
-      <ButtonUI :type="'submit'" :mode="'green'">לוטיב</ButtonUI>
+      <BaseButton :icon="true" :type="'button'" :mode="'grey'"
+        >הסינכ</BaseButton
+      >
+      <BaseButton :type="'submit'" :mode="'green'">לוטיב</BaseButton>
     </div>
   </form>
 </template>
 
 <script>
-import ButtonUI from "./UI/BaseButton.vue";
+import BaseButton from "./UI/BaseButton.vue";
 import BaseInput from "./UI/BaseInput.vue";
 export default {
   components: {
-    ButtonUI,
+    BaseButton,
     BaseInput,
   },
   methods: {
