@@ -277,7 +277,7 @@ export default {
       justify-content: space-between;
       margin-bottom: 35px;
       .base-input {
-        width: 300px;
+        width: 430px;
       }
     }
   }
