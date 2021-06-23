@@ -14,10 +14,10 @@
       <BaseInput :name="'user-password'" :id="'user-password'" />
     </div>
     <div class="form__control form__control_btns">
-      <BaseButton :icon="true" :type="'button'" :mode="'grey'"
+      <BaseButton :icon="true" :type="'button'" :mode="'secondary'"
         >הסינכ</BaseButton
       >
-      <BaseButton :type="'submit'" :mode="'green'">לוטיב</BaseButton>
+      <BaseButton :type="'submit'" :mode="'primary'">לוטיב</BaseButton>
     </div>
   </form>
 </template>

@@ -64,10 +64,10 @@ export default {
       center/cover no-repeat;
   }
 }
-.btn.grey {
+.btn.secondary {
   background-color: #c4c4c4;
 }
-.btn.green {
+.btn.primary {
   background-color: #009c41;
 }
 
@@ -92,9 +92,9 @@ export default {
   }
   .btn.icon {
     &::before {
-      left: unset;
-      width: 30px;
-      height: 30px;
+      left: 44px;
+      width: 24px;
+      height: 24px;
     }
   }
   .btn.round {
@@ -113,6 +113,8 @@ export default {
   .btn.icon {
     &::before {
       left: 102px;
+      width: 19px;
+      height: 19px;
     }
   }
   .btn.round {
