@@ -2,7 +2,7 @@
   <a href="#" class="icon-avatar"></a>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .icon-avatar {
   display: inline-block;
   width: 40px;

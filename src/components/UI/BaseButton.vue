@@ -100,6 +100,9 @@ export default {
   .btn.round {
     width: 50px;
     height: 50px;
+    &::before {
+      left: unset;
+    }
   }
 }
 

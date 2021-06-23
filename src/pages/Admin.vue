@@ -12,7 +12,7 @@
         </div>
         <div class="admin__divider"></div>
         <div class="admin__search">
-          <BaseButton :round="true" :icon="true" :mode="'green'"
+          <BaseButton :round="true" :icon="true" :mode="'primary'"
             >השדח העצה</BaseButton
           >
           <BaseInput
@@ -161,7 +161,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main {
   background: url("../assets/img/bg-build-desctop.jpg") center center/cover
     no-repeat;
