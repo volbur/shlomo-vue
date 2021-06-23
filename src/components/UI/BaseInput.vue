@@ -9,6 +9,8 @@
       :id="id"
       :name="name"
       :placeholder="placeholder"
+      :value="value"
+      @input="$emit('input', $event.target.value)"
     />
   </div>
 </template>
@@ -27,6 +29,10 @@ export default {
     };
   },
   props: {
+    value: {
+      type: String,
+      required: false,
+    },
     id: {
       type: String,
       required: false,

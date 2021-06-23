@@ -7,11 +7,16 @@
         :icon-name="'cross'"
         :name="'user-name'"
         :id="'user-name'"
+        v-model="userName"
       />
     </div>
     <div class="form__control">
       <label class="form__label" for="user-password">אמסיס</label>
-      <BaseInput :name="'user-password'" :id="'user-password'" />
+      <BaseInput
+        :name="'user-password'"
+        :id="'user-password'"
+        v-model="userPassword"
+      />
     </div>
     <div class="form__control form__control_btns">
       <BaseButton :icon="true" :type="'button'" :mode="'secondary'"
@@ -26,6 +31,12 @@
 import BaseButton from "./UI/BaseButton.vue";
 import BaseInput from "./UI/BaseInput.vue";
 export default {
+  data() {
+    return {
+      userName: "",
+      userPassword: "",
+    };
+  },
   components: {
     BaseButton,
     BaseInput,
@@ -33,6 +44,8 @@ export default {
   methods: {
     submitForm() {
       this.$router.push("/admin");
+      console.log("userPassword: ", this.userPassword);
+      console.log("userName: ", this.userName);
     },
   },
 };
