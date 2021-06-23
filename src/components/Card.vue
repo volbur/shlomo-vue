@@ -92,7 +92,7 @@ export default {
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, minmax(45px, auto));
     grid-row-gap: 14px;
     padding: 26px 10px 24px;
     height: unset;
@@ -115,6 +115,7 @@ export default {
       color: #797979;
     }
     &-value {
+      padding: 7px;
       font-weight: bold;
       font-size: 20px;
       line-height: 23px;
@@ -250,7 +251,7 @@ export default {
     }
     &__items {
       grid-template-columns: repeat(9, 1fr);
-      grid-template-rows: 45px;
+      grid-template-rows: minmax(45px, auto);
       padding: 0;
       border-radius: 35px;
       background-color: #fff;
