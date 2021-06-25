@@ -81,6 +81,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../scss/variables.scss";
 .base-input {
   padding: 0 22px;
   width: 100%;
@@ -90,7 +91,7 @@ export default {
   text-align: right;
   font-size: 18px;
   line-height: 21px;
-  background: #ffffff;
+  background: $primary-white-color;
   &:focus {
     outline: none;
   }

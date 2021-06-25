@@ -25,13 +25,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../scss/variables.scss";
 .round-button {
   position: relative;
   width: 40px;
   height: 40px;
   border-radius: 100%;
   border: none;
-  background-color: #fff;
+  background-color: $primary-white-color;
   cursor: pointer;
 }
 .icon {
@@ -41,7 +42,7 @@ export default {
   transform: translate(-50%, -50%);
   width: 30px;
   height: 19px;
-  fill: #fff;
+  fill: $primary-white-color;
 }
 
 @media (min-width: 768px) {
@@ -62,7 +63,7 @@ export default {
   .icon {
     width: 30px;
     height: 19px;
-    fill: #21325e;
+    fill: $main-text-color;
   }
 }
 </style>

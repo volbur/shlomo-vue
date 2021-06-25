@@ -17,6 +17,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../scss/variables.scss";
 .header {
   &__wrapper {
     padding-right: 11px;
@@ -33,16 +34,16 @@
     width: 30px;
     height: 30px;
     border-radius: 10px;
-    background-color: #009c41;
+    background-color: $primary-accent-color;
   }
   .profile-info__text {
     font-size: 10px;
     line-height: 10px;
-    color: #009c41;
+    color: $primary-accent-color;
     text-align: right;
     &:last-child {
       margin-top: 6px;
-      color: #ff7728;
+      color: $secondary-accent-color;
     }
     span {
       font-weight: bold;

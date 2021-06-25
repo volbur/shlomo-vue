@@ -39,6 +39,7 @@ export default {
 
 
 <style lang="scss" scoped>
+@import "../../scss/variables.scss";
 .btn {
   width: 156px;
   height: 40px;
@@ -46,7 +47,7 @@ export default {
   border: none;
   font-size: 18px;
   line-height: 21px;
-  color: #ffffff;
+  color: $primary-white-color;
   cursor: pointer;
 }
 .btn.icon {
@@ -65,10 +66,10 @@ export default {
   }
 }
 .btn.secondary {
-  background-color: #c4c4c4;
+  background-color: $secondary-btn-color;
 }
 .btn.primary {
-  background-color: #009c41;
+  background-color: $primary-accent-color;
 }
 
 .btn.round {

@@ -162,6 +162,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../scss/variables.scss";
 .main {
   background: url("../assets/img/bg-build-desctop.jpg") center center/cover
     no-repeat;
@@ -169,7 +170,7 @@ export default {
 .admin {
   padding: 42px 0 42px;
   min-height: 830px;
-  background-color: rgba(33, 50, 94, 0.8);
+  background-color: $main-filter-color;
   &__switch-wrapper {
     display: flex;
     justify-content: space-between;
@@ -181,7 +182,7 @@ export default {
   &__switch {
     display: flex;
     width: 970px;
-    background-color: #fff;
+    background-color: $primary-white-color;
     border-radius: 35px;
 
     &_on,
@@ -197,8 +198,8 @@ export default {
       color: #5f5f5f;
     }
     .active {
-      background-color: #ff7728;
-      color: #fff;
+      background-color: $secondary-accent-color;
+      color: $primary-white-color;
     }
   }
   &__divider {
@@ -206,7 +207,7 @@ export default {
     height: 2px;
     width: 100%;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: $primary-white-color;
   }
   &__search {
     display: flex;
@@ -233,7 +234,7 @@ export default {
   .admin {
     padding: 42px 0 42px;
     min-height: 830px;
-    background-color: rgba(33, 50, 94, 0.8);
+    background-color: $main-filter-color;
     &__switch-wrapper {
       display: flex;
       justify-content: space-between;
@@ -245,7 +246,7 @@ export default {
     &__switch {
       display: flex;
       width: 970px;
-      background-color: #fff;
+      background-color: $primary-white-color;
       border-radius: 35px;
 
       &_on,
@@ -261,8 +262,8 @@ export default {
         color: #5f5f5f;
       }
       .active {
-        background-color: #ff7728;
-        color: #fff;
+        background-color: $secondary-accent-color;
+        color: $primary-white-color;
       }
     }
     &__divider {
@@ -270,7 +271,7 @@ export default {
       height: 2px;
       width: 100%;
       border-radius: 2px;
-      background-color: #fff;
+      background-color: $primary-white-color;
     }
     &__search {
       display: flex;

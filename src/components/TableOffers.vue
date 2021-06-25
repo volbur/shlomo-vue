@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../scss/variables.scss";
 .table-offers {
   list-style: none;
   &__heads {
@@ -47,7 +48,7 @@ export default {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: #f5f5f5;
+  color: $main-head-des-color;
   list-style: none;
 }
 .card {

@@ -15,7 +15,6 @@
             >
               <path
                 d="M2 11.5L10 18L22 2"
-                stroke="#009C41"
                 stroke-width="4"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -83,6 +82,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../scss/variables.scss";
 .card {
   list-style: none;
 
@@ -97,7 +97,7 @@ export default {
     padding: 26px 10px 24px;
     height: unset;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: $primary-white-color;
   }
   &__item {
     list-style: none;
@@ -105,14 +105,14 @@ export default {
     &_svg {
       text-align: center;
       .card__item-head {
-        color: #797979;
+        color: $main-head-mob-color;
       }
     }
     &-head {
       font-size: 18px;
       line-height: 21px;
       text-align: right;
-      color: #797979;
+      color: $main-head-mob-color;
     }
     &-value {
       padding: 7px;
@@ -120,7 +120,7 @@ export default {
       font-size: 20px;
       line-height: 23px;
       text-align: right;
-      color: #21325e;
+      color: $main-text-color;
     }
     &_1 {
       grid-column: 1 / 2;
@@ -196,12 +196,17 @@ export default {
     width: 95px;
   }
   .round-button {
-    background-color: #009c41;
+    background-color: $primary-accent-color;
+  }
+}
+.card__item_svg {
+  svg path {
+    stroke: $primary-accent-color;
   }
 }
 
 .show-text .card__item-head {
-  color: #009c41;
+  color: $primary-accent-color;
 }
 
 .svg-wrapper {
@@ -248,11 +253,11 @@ export default {
         background-color: #ff7728;
       }
       .card__item-value {
-        color: #fff;
+        color: $primary-white-color;
       }
       .card__item_svg {
         svg path {
-          stroke: #fff;
+          stroke: $primary-white-color;
         }
       }
     }
@@ -261,7 +266,7 @@ export default {
       grid-template-rows: minmax(45px, auto);
       padding: 0;
       border-radius: 35px;
-      background-color: #fff;
+      background-color: $primary-white-color;
       cursor: pointer;
     }
     &__item {
@@ -327,7 +332,7 @@ export default {
     .round-button {
       width: 45px;
       height: 45px;
-      background-color: #fff;
+      background-color: $primary-white-color;
     }
   }
   .show-svg .svg-wrapper {

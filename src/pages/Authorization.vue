@@ -32,6 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../scss/variables.scss";
 .main {
   background: url("../assets/img/bg-build-mobile.jpg") center center/cover;
 }
@@ -44,21 +45,21 @@ export default {
   align-items: center;
   padding: 16px 24px 63px;
   width: 100%;
-  background-color: rgba(33, 50, 94, 0.8);
+  background-color: $main-filter-color;
   &__wrapper-title {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-bottom: 12px;
     max-width: 330px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $primary-white-color;
   }
   &__title {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-align: right;
-    color: #fff;
+    color: $primary-white-color;
   }
   &__text {
     margin-top: 72px;
@@ -66,7 +67,7 @@ export default {
     text-align: center;
     font-size: 24px;
     line-height: 28px;
-    color: #fff;
+    color: $primary-white-color;
   }
 }
 
@@ -87,7 +88,7 @@ export default {
       align-items: flex-end;
       padding-bottom: 0;
       max-width: 1076px;
-      border-bottom: 5px solid #fff;
+      border-bottom: 5px solid $primary-white-color;
     }
     &__title {
       font-weight: normal;
