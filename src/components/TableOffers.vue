@@ -57,13 +57,13 @@ export default {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .card {
     margin-bottom: 30px;
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .table-offers {
     &__heads {
       display: grid;

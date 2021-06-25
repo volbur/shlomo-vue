@@ -213,7 +213,7 @@ export default {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .card {
     &__items {
       grid-row-gap: 22px;
@@ -243,7 +243,7 @@ export default {
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .card {
     &:hover {
       .card__nav {

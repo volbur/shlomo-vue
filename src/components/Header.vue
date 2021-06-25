@@ -51,7 +51,7 @@
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .header {
     &__wrapper {
       padding-right: 20px;

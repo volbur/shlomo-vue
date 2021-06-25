@@ -81,7 +81,7 @@ export default {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .form {
     &__control {
       width: 350px;
@@ -100,7 +100,7 @@ export default {
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .form {
     &__control {
       &_btns {

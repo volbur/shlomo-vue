@@ -85,7 +85,7 @@ export default {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .btn {
     width: 280px;
     height: 50px;
@@ -107,7 +107,7 @@ export default {
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .btn {
     width: 350px;
     height: 58px;

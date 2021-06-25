@@ -116,7 +116,7 @@ export default {
   display: inline-block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .base-input {
     padding: 0 48px;
     height: 50px;
@@ -135,7 +135,7 @@ export default {
     }
   }
 }
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .base-input {
     height: 58px;
     font-size: 24px;

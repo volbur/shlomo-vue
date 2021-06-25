@@ -190,7 +190,6 @@ export default {
       width: 50%;
       height: 40px;
       border-radius: 35px;
-
       font-size: 18px;
       line-height: 40px;
       text-align: center;
@@ -226,7 +225,7 @@ export default {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .main {
     background: url("../assets/img/bg-build-desctop.jpg") center center/cover
       no-repeat;
@@ -248,13 +247,11 @@ export default {
       width: 970px;
       background-color: $primary-white-color;
       border-radius: 35px;
-
       &_on,
       &_off {
         width: 50%;
         height: 40px;
         border-radius: 35px;
-
         font-size: 18px;
         line-height: 40px;
         text-align: center;
@@ -291,7 +288,7 @@ export default {
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .header {
     &__avatar {
       border-radius: 100%;

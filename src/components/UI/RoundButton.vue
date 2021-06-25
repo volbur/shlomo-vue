@@ -45,7 +45,7 @@ export default {
   fill: $primary-white-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .round-button {
     width: 50px;
     height: 50px;
@@ -55,7 +55,7 @@ export default {
     height: 24px;
   }
 }
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .round-button {
     width: 50px;
     height: 50px;

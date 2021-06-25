@@ -75,7 +75,7 @@ export default {
   margin-left: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .main {
     background: url("../assets/img/bg-car-desctop.jpg") center center/cover;
   }
@@ -122,7 +122,7 @@ export default {
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .authorization {
     &__form {
       margin-top: 57px;
