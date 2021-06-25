@@ -20,29 +20,29 @@
 @import "../scss/variables.scss";
 .header {
   &__wrapper {
-    padding-right: 11px;
-    min-height: 63px;
+    padding-right: rem(11px);
+    min-height: rem(63px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
   &__avatar {
-    margin-left: 11px;
+    margin-left: rem(11px);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
+    width: rem(30px);
+    height: rem(30px);
+    border-radius: rem(10px);
     background-color: $primary-accent-color;
   }
   .profile-info__text {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: rem(10px);
+    line-height: rem(10px);
     color: $primary-accent-color;
     text-align: right;
     &:last-child {
-      margin-top: 6px;
+      margin-top: rem(6px);
       color: $secondary-accent-color;
     }
     span {
@@ -54,17 +54,17 @@
 @media (min-width: $desktop) {
   .header {
     &__wrapper {
-      padding-right: 20px;
-      min-height: 106px;
+      padding-right: rem(20px);
+      min-height: rem(106px);
     }
     &__avatar {
-      margin-left: 19px;
-      width: 38px;
-      height: 38px;
+      margin-left: rem(19px);
+      width: rem(38px);
+      height: rem(38px);
     }
     .profile-info__text {
-      font-size: 16px;
-      line-height: 18px;
+      font-size: rem(16px);
+      line-height: rem(18px);
       &:last-child {
         display: none;
       }

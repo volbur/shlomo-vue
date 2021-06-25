@@ -41,12 +41,12 @@ export default {
 <style lang="scss" scoped>
 @import "../../scss/variables.scss";
 .btn {
-  width: 156px;
-  height: 40px;
-  border-radius: 35px;
+  width: rem(156px);
+  height: rem(40px);
+  border-radius: rem(35px);
   border: none;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: rem(18px);
+  line-height: rem(21px);
   color: $primary-white-color;
   cursor: pointer;
 }
@@ -56,11 +56,11 @@ export default {
     content: "";
     position: absolute;
     top: 50%;
-    left: 25px;
+    left: rem(25px);
     transform: translateY(-50%);
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: rem(15px);
+    height: rem(15px);
     background: url("../../assets/img/icons/icon-triangle.svg") center
       center/cover no-repeat;
   }
@@ -73,8 +73,8 @@ export default {
 }
 
 .btn.round {
-  width: 40px;
-  height: 40px;
+  width: rem(40px);
+  height: rem(40px);
   font-size: 0;
   &::before {
     left: 50%;
@@ -87,20 +87,20 @@ export default {
 
 @media (min-width: $tablet) {
   .btn {
-    width: 280px;
-    height: 50px;
-    font-size: 22px;
+    width: rem(280px);
+    height: rem(50px);
+    font-size: rem(22px);
   }
   .btn.icon {
     &::before {
-      left: 44px;
-      width: 24px;
-      height: 24px;
+      left: rem(44px);
+      width: rem(24px);
+      height: rem(24px);
     }
   }
   .btn.round {
-    width: 50px;
-    height: 50px;
+    width: rem(50px);
+    height: rem(50px);
     &::before {
       left: unset;
     }
@@ -109,27 +109,27 @@ export default {
 
 @media (min-width: $desktop) {
   .btn {
-    width: 350px;
-    height: 58px;
-    font-size: 24px;
-    line-height: 28px;
+    width: rem(350px);
+    height: rem(58px);
+    font-size: rem(24px);
+    line-height: rem(28px);
   }
   .btn.icon {
     &::before {
-      left: 102px;
-      width: 19px;
-      height: 19px;
+      left: rem(102px);
+      width: rem(19px);
+      height: rem(19px);
     }
   }
   .btn.round {
-    width: 284px;
-    height: 58px;
-    font-size: 24px;
+    width: rem(284px);
+    height: rem(58px);
+    font-size: rem(24px);
     &::before {
-      width: 20px;
-      height: 20px;
+      width: rem(20px);
+      height: rem(20px);
       top: 50%;
-      left: 25px;
+      left: rem(25px);
       transform: translateY(-50%);
       background: url("../../assets/img/icons/icon-triangle.svg") center
         center/cover no-repeat;

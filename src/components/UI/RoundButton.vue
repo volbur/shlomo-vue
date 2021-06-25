@@ -28,8 +28,8 @@ export default {
 @import "../../scss/variables.scss";
 .round-button {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: rem(40px);
+  height: rem(40px);
   border-radius: 100%;
   border: none;
   background-color: $primary-white-color;
@@ -40,29 +40,29 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30px;
-  height: 19px;
+  width: rem(30px);
+  height: rem(19px);
   fill: $primary-white-color;
 }
 
 @media (min-width: $tablet) {
   .round-button {
-    width: 50px;
-    height: 50px;
+    width: rem(50px);
+    height: rem(50px);
   }
   .icon {
-    width: 34px;
-    height: 24px;
+    width: rem(34px);
+    height: rem(24px);
   }
 }
 @media (min-width: $desktop) {
   .round-button {
-    width: 50px;
-    height: 50px;
+    width: rem(50px);
+    height: rem(50px);
   }
   .icon {
-    width: 30px;
-    height: 19px;
+    width: rem(30px);
+    height: rem(19px);
     fill: $main-text-color;
   }
 }

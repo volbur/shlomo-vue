@@ -1,5 +1,5 @@
 $main-font-stack: "Arimo", "Arial", sans-serif;
-$main-text-size: 14px;
+$main-text-size: 16px;
 $main-text-height: 21px;
 $main-text-color: #21325e;
 $secondary-text-color: #b1b1b1;
@@ -13,5 +13,9 @@ $primary-white-color: #fff;
 
 $secondary-btn-color: #c4c4c4;
 
-$tablet: 678px;
+$tablet: 768px;
 $desktop: 1330px;
+
+@function rem($pixels, $context: $main-text-size) {
+  @return #{$pixels/$context}rem;
+}

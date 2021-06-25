@@ -6,21 +6,21 @@
 @import "../../scss/variables.scss";
 .icon-avatar {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: rem(40px);
+  height: rem(40px);
   background: url("../../assets/img/icons/icon-avatar.png") center center/cover
     no-repeat;
 }
 @media (min-width: $tablet) {
   .icon-avatar {
-    width: 66px;
-    height: 66px;
+    width: rem(66px);
+    height: rem(66px);
   }
 }
 @media (min-width: $desktop) {
   .icon-avatar {
-    width: 76px;
-    height: 76px;
+    width: rem(76px);
+    height: rem(76px);
   }
 }
 </style>

@@ -39,27 +39,27 @@ export default {
   &__heads {
     display: none;
     grid-template-columns: repeat(9, 1fr);
-    margin: 0 auto 35px;
-    width: 1076px;
+    margin: 0 auto rem(35px);
+    width: rem(1076px);
     list-style: none;
   }
 }
 .offers-head {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: rem(14px);
+  line-height: rem(16px);
   text-align: center;
   color: $main-head-des-color;
   list-style: none;
 }
 .card {
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
   &:last-child {
     margin-bottom: 0;
   }
 }
 @media (min-width: $tablet) {
   .card {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
   }
 }
 
@@ -70,7 +70,7 @@ export default {
     }
   }
   .card {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
 }
 </style>

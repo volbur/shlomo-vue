@@ -92,11 +92,11 @@ export default {
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, minmax(45px, auto));
-    grid-row-gap: 14px;
-    padding: 26px 10px 24px;
+    grid-template-rows: repeat(6, minmax(rem(45px), auto));
+    grid-row-gap: rem(14px);
+    padding: rem(26px) rem(10px) rem(24px);
     height: unset;
-    border-radius: 30px;
+    border-radius: rem(30px);
     background-color: $primary-white-color;
   }
   &__item {
@@ -109,16 +109,16 @@ export default {
       }
     }
     &-head {
-      font-size: 18px;
-      line-height: 21px;
+      font-size: rem(18px);
+      line-height: rem(21px);
       text-align: right;
       color: $main-head-mob-color;
     }
     &-value {
-      padding: 7px;
+      padding: rem(7px);
       font-weight: bold;
-      font-size: 20px;
-      line-height: 23px;
+      font-size: rem(20px);
+      line-height: rem(23px);
       text-align: right;
       color: $main-text-color;
     }
@@ -129,8 +129,8 @@ export default {
       .svg-wrapper {
         display: none;
         svg {
-          width: 20px;
-          height: 16px;
+          width: rem(20px);
+          height: rem(16px);
         }
       }
     }
@@ -167,7 +167,7 @@ export default {
 
       grid-column: 2 / 3;
       grid-row: 1 / 1;
-      padding-bottom: 17px;
+      padding-bottom: rem(17px);
       &::after {
         position: absolute;
         bottom: 0;
@@ -176,7 +176,7 @@ export default {
         content: "";
         display: inline-block;
         width: 200%;
-        height: 2px;
+        height: rem(2px);
         background-color: #1d4076;
       }
       img {
@@ -190,10 +190,10 @@ export default {
   &__nav {
     position: absolute;
     display: flex;
-    top: 15px;
-    left: 35px;
+    top: rem(15px);
+    left: rem(35px);
     justify-content: space-between;
-    width: 95px;
+    width: rem(95px);
   }
   .round-button {
     background-color: $primary-accent-color;
@@ -216,27 +216,27 @@ export default {
 @media (min-width: $tablet) {
   .card {
     &__items {
-      grid-row-gap: 22px;
-      padding: 30px 40px 40px;
+      grid-row-gap: rem(22px);
+      padding: rem(30px) rem(40px) rem(40px);
     }
     &__item {
       &-head {
-        font-size: 22px;
-        margin-bottom: 7px;
+        font-size: rem(22px);
+        margin-bottom: rem(7px);
       }
       &-value {
-        font-size: 26px;
+        font-size: rem(26px);
       }
     }
     &__nav {
-      top: 15px;
-      left: 35px;
-      width: 110px;
+      top: rem(15px);
+      left: rem(35px);
+      width: rem(110px);
     }
     &__item {
       &_9 {
         img {
-          height: 40px;
+          height: rem(40px);
         }
       }
     }
@@ -250,7 +250,7 @@ export default {
         display: flex;
       }
       .card__items {
-        background-color: #ff7728;
+        background-color: $secondary-accent-color;
       }
       .card__item-value {
         color: $primary-white-color;
@@ -263,7 +263,7 @@ export default {
     }
     &__items {
       grid-template-columns: repeat(9, 1fr);
-      grid-template-rows: minmax(45px, auto);
+      grid-template-rows: minmax(rem(45px), auto);
       padding: 0;
       border-radius: 35px;
       background-color: $primary-white-color;
@@ -274,11 +274,11 @@ export default {
         display: none;
       }
       &-value {
-        border-left: 1px solid #e5e5e5;
+        border-left: rem(1px) solid #e5e5e5;
 
         font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: rem(14px);
+        line-height: rem(16px);
         text-align: center;
       }
       &_svg {
@@ -323,15 +323,15 @@ export default {
       display: none;
       position: absolute;
       top: 50%;
-      right: -112px;
+      right: rem(-112px);
       left: unset;
       justify-content: space-between;
-      width: 100px;
+      width: rem(100px);
       transform: translateY(-50%);
     }
     .round-button {
-      width: 45px;
-      height: 45px;
+      width: rem(45px);
+      height: rem(45px);
       background-color: $primary-white-color;
     }
   }

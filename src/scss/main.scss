@@ -23,9 +23,9 @@ body {
   }
   .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: rem(1px);
+    height: rem(1px);
+    margin: rem(-1px);
     border: 0;
     padding: 0;
     white-space: nowrap;
@@ -51,18 +51,18 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
-  width: 374px;
+  padding: 0 rem(20px);
+  width: rem(374px);
 }
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .container {
-    width: 600px;
+    width: rem(600px);
     padding: 0;
   }
 }
-@media (min-width: 1330px) {
+@media (min-width: $desktop) {
   .container {
-    width: 1076px;
+    width: rem(1076px);
     padding: 0;
   }
 }

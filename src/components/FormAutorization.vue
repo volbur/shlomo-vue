@@ -58,25 +58,25 @@ export default {
   flex-direction: column;
   align-items: center;
   &__control {
-    margin-top: 56px;
-    width: 330px;
+    margin-top: rem(56px);
+    width: rem(330px);
     &:first-child {
       margin-top: 0;
     }
     &_btns {
       display: flex;
       justify-content: space-between;
-      margin-top: 92px;
-      width: 330px;
+      margin-top: rem(92px);
+      width: rem(330px);
     }
   }
   &__label {
     display: block;
-    margin-bottom: 12px;
-    padding-right: 22px;
+    margin-bottom: rem(12px);
+    padding-right: rem(22px);
     text-align: right;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: rem(18px);
+    line-height: rem(21px);
     color: $primary-white-color;
   }
 }
@@ -84,18 +84,18 @@ export default {
 @media (min-width: $tablet) {
   .form {
     &__control {
-      width: 350px;
-      margin-top: 40px;
+      width: rem(350px);
+      margin-top: rem(40px);
       &_btns {
-        margin-top: 70px;
-        width: 600px;
+        margin-top: rem(70px);
+        width: rem(600px);
       }
     }
     &__label {
-      margin-bottom: 15px;
-      padding-right: 42px;
-      font-size: 22px;
-      line-height: 28px;
+      margin-bottom: rem(15px);
+      padding-right: rem(42px);
+      font-size: rem(22px);
+      line-height: rem(28px);
     }
   }
 }
@@ -104,12 +104,12 @@ export default {
   .form {
     &__control {
       &_btns {
-        margin-top: 86px;
-        width: 740px;
+        margin-top: rem(86px);
+        width: rem(740px);
       }
     }
     &__label {
-      font-size: 24px;
+      font-size: rem(24px);
     }
   }
 }

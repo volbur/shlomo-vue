@@ -83,14 +83,14 @@ export default {
 <style lang="scss" scoped>
 @import "../../scss/variables.scss";
 .base-input {
-  padding: 0 22px;
+  padding: 0 rem(22px);
   width: 100%;
-  height: 40px;
-  border-radius: 35px;
+  height: rem(40px);
+  border-radius: rem(35px);
   border: none;
   text-align: right;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: rem(18px);
+  line-height: rem(21px);
   background: $primary-white-color;
   &:focus {
     outline: none;
@@ -102,9 +102,9 @@ export default {
     display: none;
     position: absolute;
     top: 50%;
-    left: 22px;
-    width: 14px;
-    height: 14px;
+    left: rem(22px);
+    width: rem(14px);
+    height: rem(14px);
     transform: translateY(-50%);
     border: none;
     background-color: transparent;
@@ -118,16 +118,16 @@ export default {
 
 @media (min-width: $tablet) {
   .base-input {
-    padding: 0 48px;
-    height: 50px;
-    font-size: 22px;
-    line-height: 28px;
+    padding: 0 rem(48px);
+    height: rem(50px);
+    font-size: rem(22px);
+    line-height: rem(28px);
     &__btn {
       position: absolute;
       top: 50%;
-      left: 22px;
-      width: 30px;
-      height: 30px;
+      left: rem(22px);
+      width: rem(30px);
+      height: rem(30px);
       transform: translateY(-50%);
       border: none;
       background-color: transparent;
@@ -137,11 +137,11 @@ export default {
 }
 @media (min-width: $desktop) {
   .base-input {
-    height: 58px;
-    font-size: 24px;
+    height: rem(58px);
+    font-size: rem(24px);
     &__btn {
-      width: 18px;
-      height: 18px;
+      width: rem(18px);
+      height: rem(18px);
     }
   }
 }
