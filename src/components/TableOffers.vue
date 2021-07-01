@@ -38,7 +38,10 @@ export default {
   list-style: none;
   &__heads {
     display: none;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns:
+      rem(140px) rem(122px) rem(110px) rem(104px) rem(105px)
+      rem(98px) rem(167px) rem(168px) rem(63px);
+
     margin: 0 auto rem(35px);
     width: rem(1076px);
     list-style: none;

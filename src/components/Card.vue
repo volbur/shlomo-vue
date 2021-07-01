@@ -115,6 +115,9 @@ export default {
       color: $main-head-mob-color;
     }
     &-value {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       padding: rem(7px);
       font-weight: bold;
       font-size: rem(20px);
@@ -262,7 +265,9 @@ export default {
       }
     }
     &__items {
-      grid-template-columns: repeat(9, 1fr);
+      grid-template-columns:
+        rem(140px) rem(122px) rem(110px) rem(104px) rem(105px)
+        rem(98px) rem(167px) rem(168px) rem(63px);
       grid-template-rows: minmax(rem(45px), auto);
       padding: 0;
       border-radius: 35px;
@@ -275,7 +280,6 @@ export default {
       }
       &-value {
         border-left: rem(1px) solid #e5e5e5;
-
         font-weight: normal;
         font-size: rem(14px);
         line-height: rem(16px);
